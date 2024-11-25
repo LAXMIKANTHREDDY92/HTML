@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+   
+   body {
+            font-size: 18px;
+            background-color: lightgray;
+    }
+    /*screen reesolution greater than 600px */
+
+    @media (min-width: 600px){
+        body{
+            background-color:blue;
+            font-size: 18px;
+        }
+    }
+/*screen reesolution greater than 900px */
+
+    @media (min-width: 900px){
+        body{
+            background-color: red;
+            font-size: 20px;
+        }
+    }
+
+    @media(orientation:portrait){
+        body{
+            background-color:yellow;
+        }
+    }
+
+    @media(orientation:landscape){
+        body{
+            background-color:rgb(130, 238, 213);
+        }
+    }
+    /*@media (min-width: 600px) and  @media (max-width: 900px) and @media(orientation:landscape){
+        body{
+            background-color: black;
+
+        }
+    }*/
+
+    /*common psuedo classes: */
+    button:hover{
+        background-color:green;
+    }
+    button:focus{
+        background-color:yellow;
+    }
+    button:active{
+        background-color:red;
+    }
+    
+
+     /*common psuedo elements: */
+    h2::before{
+        content:'@';
+        color:violet;
+    }
+    h2::after{
+        content:'$';
+        color:red;
+    }
+    h2::first-letter{
+        
+        color:brown;
+    }
+    h2::first-line{
+        content:'k';
+        color:yellow;
+    }
+    h2::selection{
+        background-color: pink;
+    }
+
+
+
+</style>
+<body>
+    <h1>Responsive design using Media queries:</h1>
+    <p>web pages can adapt to different screen resolutions and devices</p>
+    <button>submit</button>
+
+    <h2>LAxmikanth</h2>
+</body>
+</html>
