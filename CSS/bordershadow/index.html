@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    h1,h2,h3{
+        width :60px;
+        height :20 px;
+        padding:20px;
+        margin:20px
+        
+    }
+    h1{
+        border: 2px dashed red;
+
+    }
+    h2{
+        border: 5px dotted blue;
+    }
+    h3{
+        border: 3px double black;
+        border-radius: 4cm;
+    }
+    .border{
+        border: 3px  solid black;
+        border-radius: 5cm;
+    }
+    .border{
+        box-shadow:inset 5px 5px 10px rgba(0, 0, 0, 0.5); /* insent keyword is used to get shadow inside the box*/
+        transition: red 10s ease 2s;
+    }
+    .box{
+        width: 300px;
+        height: 200px;
+       background-color: lightblue;
+       transition: background-color 1s ease 2s;}
+    .box:hover{
+        background-color: brown;
+    }
+</style>
+<body>
+    <h1>laxmi</h1>
+    <h2>kanth</h2>
+    <h3>reddy</h3>
+    <div class="border">solid border:</div><br>
+    <div class="box">box</div>
+</body>
+</html>
