@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .parent{
+        background-color: aqua;
+        width: 500px;
+        height: 500px;
+        margin: auto;
+        text-align: center;
+    }
+    .child{
+        width: 100px;
+        border: 2px red double;
+        margin: 2px;
+        border-radius: 10%;
+
+    }
+    /* giving  relative-postion to the child elemnt */
+    .one{
+        background-color: blue;
+        position:relative;
+        right: 100px;
+    }
+    /* giving  absolute-postion to the child elemnt */
+    .two{
+        background-color: blanchedalmond;
+        position: absolute;
+        bottom: 50px;
+    }
+    .three{
+        background-color: aquamarine;
+    }
+    .four{
+        background-color: blueviolet;
+    }
+
+</style>
+<body>
+    <!-- Posistioning -->
+    <div class="parent">
+        <div class="child one">one</div><br>
+        <div class="child two">two</div><br>
+        <div class="child three">three</div><br>
+        <div class="child four">four</div><br>
+    </div>
+</body>
+</html>
